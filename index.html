@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/de7302ea83.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Teko:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>Project Play Video</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header id="navbar">
+      <div class="logo">
+        <i class="fas fa-play-circle"></i>
+        <button class="title" title="새로고침">Project View</button>
+      </div>
+      <div class="category">
+        <button class="category__btn" title="직업심리 검사 영상/설명" data-filter="test">직업심리검사<div class="projects__description"><span data-filter="test">Personal Project</span></div></button>
+        <button class="category__btn" title="OTT 추천 영상/설명" data-filter="ott">OTT 추천<div class="projects__description"><span data-filter="ott">Team Project</span></div></button>
+        <button class="category__btn" title="식물 검사 영상/설명" data-filter="plant">식물 검사<div class="projects__description"><span data-filter="plant">Team Project</span></div></button>
+      </div>
+      <div class="icons">
+        <button><i class="fas fa-dice-three"></i></button>
+      </div>
+       <!-- Toggle button -->
+       <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </header>
+  <div class="Project" data-type="test">
+    <div class="primary">
+      <!-- Video Player -->
+      <section class="player">
+        <video
+          class="video__player"
+          controls
+          src="media/test.mp4"
+        ></video>
+      </section>
+
+        <section class="info">
+          <!-- Metadata -->
+            <div class="title">
+              <span class="titleclamp">
+                Personal Project - pc : HTML, CSS, JavaScript, React를 활용해
+                직업 심리 검사 사이트를 제작했습니다.
+              </span>
+            </div>
+          <div class="infoAndicons">
+            <span class="views">제작기간: 2 week</span>
+          </div>
+          <div class="detail">
+                <span class="details">
+                    개인 프로젝트로 진행되었으며, <br>
+                    &emsp; - 사용자 확인 페이지<br>
+                    &emsp; - 검사 예시 페이지<br>
+                    &emsp; - 검사 진행 페이지<br>
+                    &emsp; - 간단 결과 페이지<br>
+                    &emsp; - 세부 결과 페이지<br>
+                    로 구성되어 있습니다.<br>
+                    <br>
+                    프로젝트 요약<br>
+                    1. 사용자의 간단 정보를 입력받습니다.<br>
+                    &emsp; 1-1. 유효성 검사를 진행해 정확한 입력값인지 판단합니다.<br>
+                    2. 테스트 전 검사 절차에 대한 예시 문구를 보여줍니다.<br>
+                    &emsp; 2-1. 예시 페이지에서는 반드시 프로그레스 바가 0%로 고정됩니다.<br>
+                    3. 검사가 진행되며, 검사 진행률에 따른 프로그레스 바가 보여집니다.<br>
+                    &emsp; 3-1. 질문 사항을 모두 선택하지 않으면 다음 페이지로 이동이 불가합니다.<br>
+                    &emsp; 3-2. 단, 이전 페이지로 이동은 가능하며 이전에 선택한 결과가 유지됩니다.<br>
+                    4. 결과에 따른 유형과 그에 따른 간단 설명이 출력됩니다.<br>
+                    5. 결과에 따른 세부적인 내용이 화면에 출력됩니다.<br>
+                    <br>
+                    - 리액트 외 라이브러리는 사용되지 않았습니다.<br>
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+    </div>
+  </div>
+
+  <div class="Project" data-type="ott">
+    <div class="primary">
+      <!-- Video Player -->
+      <section class="player">
+        <video
+          class="video__player"
+          controls
+          src="media/OTT.mp4"
+        ></video>
+      </section>
+
+        <section class="info">
+          <!-- Metadata -->
+            <div class="title">
+              <span class="titleclamp">
+                Team Project - pc [프론트엔드 혼자 개발] : 데이터 분석을 통한 결과를 바탕으로
+                사용자에게 맞는 OTT 플랫폼을 추천해줍니다.
+              </span>
+            </div>
+          <div class="infoAndicons">
+            <span class="views">제작기간: 3 week</span>
+          </div>
+          <div class="detail">
+                <span class="details">
+                    4인 팀 프로젝트로 진행했지만 프론트엔드 개발은 혼자 맡았습니다, <br>
+                    &emsp; - 메인 페이지<br>
+                    &emsp; - 로그인 / 회원가입 페이지<br>
+                    &emsp; - OTT 사용 등급 검사 페이지<br>
+                    &emsp; - 사용 등급 걸사 결과 페이지<br>
+                    &emsp; - 선호 OTT 컨텐츠 선택 페이지<br>
+                    &emsp; - OTT 추천 결과 페이지<br>
+                    로 구성되어 있습니다.<br>
+                    <br>
+                    프로젝트 요약<br>
+                    1. 메인 페이지에 서비스 간단 소개와 통계 자료를 보여줍니다.<br>
+                    &emsp; 1-1. 전체 OTT 이용자 데이터를 활용한 통계.<br>
+                    &emsp; 1-2. 전체적인 통계 자료 그래프는 ReChart 라이브러리 사용.<br>
+                    2. 로그인과 회원가입이 진행되며, 유효성검사를 진행합니다.<br>
+                    3. 사용 등급 검사를 진행합니다, 유효성 검사를 진행해 입력 값이 정상적인지 판단합니다.<br>
+                    4. 검사 내용에 따른 결과를 표시합니다.<br>
+                    &emsp; 4-1. 그래프의 경우 좌우 버튼을 누르면 슬라이드 효과가 나타납니다..<br>
+                    5. 선호 OTT 컨텐츠 선택 페이지에서 자신이 즐겨봤던 미디어 컨텐츠를 선택합니다.<br>
+                    &emsp; 5-1. 각 컨텐츠는 카드 형태의 컴포넌트로 이뤄져 있고 클릭해 선택 가능합니다.<br>
+                    &emsp; 5-2. 페이지에 무한 스크롤을 적용했습니다.<br>
+                    &emsp; 5-3. 컨텐츠는 최대 10개의 컨텐츠 선택 가능합니다.<br>
+                    6. 선택한 OTT 컨텐츠를 기반으로 분석된 데이터를 통해 OTT 플랫폼을 추천해줍니다.<br>
+                    &emsp; 6-1. 분석 결과에 따라 사용자가 선호하는 컨텐츠가 많은 OTT 플랫폼을 표시합니다.<br>
+                    &emsp; 6-2. OTT 플랫폼 별 세부적으로 비교되는 데이터는 그래프로 표시합니다.<br>
+                    <br>
+                    - 모든 그래프는 ReChart 라이브러리를 사용해 제작했습니다.<br>
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+    </div>
+  </div>
+
+  <div class="Project" data-type="plant">
+    <div class="primary">
+      <!-- Video Player -->
+      <section class="player">
+        <video
+          class="video__player"
+          controls
+          src="media/purr.mp4"
+        ></video>
+      </section>
+
+        <section class="info">
+          <!-- Metadata -->
+            <div class="title">
+              <span class="titleclamp">
+                Team Project - pc & mobile [프론트엔드 2인 개발] : 식물 사진을 업로드하면
+                해당 식물의 정보를 알려주는 웹 서비스를 제작했습니다.
+              </span>
+            </div>
+          <div class="infoAndicons">
+            <span class="views">제작기간: 5 week</span>
+          </div>
+          <div class="detail">
+                <span class="details">
+                    6인(본인 포함)의 팀을 이뤄 제작했으며, 해당 프로젝트에서<br>
+                    &emsp; - 메인 페이지<br>
+                    &emsp; - 헤더 바<br>
+                    &emsp; - 업로드된 이미지에 따른 결과 모달창<br>
+                    &emsp; - 세부 정보 모달창<br>
+                    &emsp; - 사이드 메뉴<br>
+                    &emsp; - 마이 페이지<br>
+                    를 제작했습니다.<br>
+                    <br>
+                    프로젝트 요약<br>
+                    1. 메인 페이지는 3개의 컨텐츠 박스로 구분되어 있고, full-page가 적용되었습니다.<br>
+                    &emsp; 1-1. 1번 컨텐츠 박스에서는 서비스 분위기와 맞는 비디오가 재생되며 서비스의 슬로건을 표시합니다.<br>
+                    &emsp; 1-2. 2번 컨텐츠 박스에서는 서비스의 간단한 소개 문구를 표시합니다.<br>
+                    &emsp; 1-3. 3번 컨텐츠 박스는 메인 기능 중 하나로 이미지 업로드가 가능합니다.<br>
+                    2. 이미지 업로드 버튼을 클릭해 이미지 파일을 선택 후 업로드가 가능합니다.<br>
+                    &emsp; 2-1. 사진 파일이 맞는지 판단하기 위해 html과 TypeScript 코드를 통해 판별합니다, 사진이 아닐 경우 알림창 출력<br>
+                    &emsp; 2-2. 이미지가 업로드되고 검사 버튼을 클릭 시 API 통신이 시작되고 완료되기 전까지 로딩 화면이 표시됩니다.<br>
+                    &emsp; 2-3. AI 모델에 의해 판단된 식물 정보를 최대 3개 보여줍니다.<br>
+                    &emsp; 2-4. 각 식물 이미지를 선택하면 해당 식물과 매치되는 확률과 이름을 표시합니다.<br>
+                    &emsp; 2-5. 상세 정보 버튼 클릭 시 현재 선택된 식물의 상세 정보 모달로 변합니다.<br>
+                    3. 많은 정보를 표시하기 좋게 모달 화면이 커지며 식물의 상세 정보를 담습니다.<br>
+                    4. 헤더 바의 우측 버튼 클릭 시 사이드 메뉴가 열립니다.<br>
+                    &emsp; 4-1. 각 버튼 클릭 시 해당 페이지로 이동합니다, 이동 시 사이드 메뉴는 자동으로 닫깁니다.<br>
+                    5. 마이 페이지로 이동 시 자신의 식물 사진을 업로드할 수 있는 3개의 박스가 있습니다.<br>
+                    &emsp; 5-1. 저장된 데이터가 없다면 파일 선택을 통해 사진을 추가하고 식물 이름을 지정할 수 있습니다.<br>
+                    &emsp; 5-2. 식물 이름을 변경하고 싶다면 수정 버튼을 통해 변경, 삭제 버튼을 누르면 삭제가 가능합니다.<br>
+                    &emsp; 5-3. 각 버트에 의한 이벤트가 정상적으로 완료되면 Toast를 통해 안내 문구를 표시합니다.<br>
+                    &emsp; 5-4. 저장된 사진을 클릭 하면 현재 선택된 이미지가 좌측에 메인 이미지로 선택되고 이름이 하이라이트 표시됩니다.<br>
+                    6. 마이 페이지 하단에 자신이 찜 해놓은 식물 목록이 카드 형태로 나열됩니다.<br>
+                    &emsp; 6-1. 찜 카드가 많으면 좌우 스크롤이 생성됩니다.<br>
+                    &emsp; 6-2. 식물 카드를 클릭하면 해당 식물의 상세 정보가 담긴 페이지로 이동합니다.<br>
+                    <br>
+                    - 해당 프로젝트는 모든 페이지가 모바일에도 적상 작동 및 UI가 보이도록 반응형 디자인 되었습니다.<br>
+                    - css는 tailwind CSS를 사용했습니다.<br>
+                    - 리액트와 함께 TypeScript로 제작했습니다.<br>
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+    </div>
+
+  </div>
+  </body>
+</html>
